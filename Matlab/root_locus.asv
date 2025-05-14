@@ -1,0 +1,10 @@
+%root locus for third order system with no zeros , good response
+
+zeros = [-9.9346+58.5j ,-9.9346-58.5j];   
+poles = [0, -1 , -9.9346+58.5j ,-9.9346-58.5j ]; 
+% 
+% 
+% % Create the transfer function
+G = zpk(zeros, poles,1);
+
+rlocus(G);
